@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo Da Velha</title>
+</head>
+<body>
+
+
+    <section>
+        <header>
+
+            <div class="options">
+                <label class="xSmall"></label>
+                <label class="oSmall"></label>
+            </div>
+
+            <div class="turn">
+                <label class="turnX"></label>
+                <p>turn</p>
+            </div>
+
+            <button class="repeat"></button>
+        </header>
+
+        <main>
+            <div class="position0 positionStyle" onclick="escolherLugar('position0')"></div>
+            <div class="position1 positionStyle" onclick="escolherLugar('position1')"></div>
+            <div class="position2 positionStyle" onclick="escolherLugar('position2')"></div>
+            <div class="position3 positionStyle" onclick="escolherLugar('position3')"></div>
+            <div class="position4 positionStyle" onclick="escolherLugar('position4')"></div>
+            <div class="position5 positionStyle" onclick="escolherLugar('position5')"></div>
+            <div class="position6 positionStyle" onclick="escolherLugar('position6')"></div>
+            <div class="position7 positionStyle" onclick="escolherLugar('position7')"></div>
+            <div class="position8 positionStyle" onclick="escolherLugar('position8')"></div>
+        </main>
+
+        <footer>
+            <div class="containerPointsX containerPoints">
+                <p>X (YOU)</p>
+                <p class="PointsX">0</p>
+            </div>
+
+            <div class="containerPointsTies containerPoints">
+                <p>TIES</p>
+                <p class="PointsTies">0</p>
+            </div>
+
+            <div class="containerPointsO containerPoints">
+                <p>O (CPU)</p>
+                <p class="PointsO">0</p>
+            </div>
+        </footer>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

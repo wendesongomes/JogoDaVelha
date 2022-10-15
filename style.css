@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #192a32;
+}
+
+section {
+  max-width: 400px;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  width: 99%;
+}
+section header .repeat {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #a8bec9;
+  border: none;
+  box-shadow: 0px 3px 2px 0px black;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+section header .repeat:hover {
+  background-color: #8aa0aa;
+}
+section header .repeat::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: solid 3px #192a32;
+  border-top: 3px solid transparent;
+  border-left: 3px solid #192a32;
+  border-right: 3px solid #192a32;
+  border-bottom: 3px solid #192a32;
+  border-radius: 50%;
+  left: 6px;
+  transform: rotate(90deg);
+}
+section header .repeat::after {
+  content: "";
+  position: relative;
+  top: -4px;
+  left: -2px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #192a32;
+  transform: rotate(135deg);
+}
+section header .options {
+  display: flex;
+  gap: 10px;
+}
+section header .options .xSmall {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 20px;
+  background-color: #31c4be;
+  transform: rotate(45deg);
+  margin-left: 10px;
+}
+section header .options .xSmall::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 5px;
+  height: 20px;
+  background-color: #31c4be;
+  transform: rotate(-90deg);
+}
+section header .options .oSmall {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: solid 5px #f3b237;
+  border-radius: 50%;
+}
+section header .turn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f3540;
+  width: 120px;
+  height: 35px;
+  gap: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 2px 0px black;
+}
+section header .turn .turnX {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 20px;
+  transform: rotate(-45deg);
+  background-color: #a8bec9;
+}
+section header .turn .turnX::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 5px;
+  height: 20px;
+  background-color: #a8bec9;
+  transform: rotate(90deg);
+}
+section header .turn p {
+  color: #a8bec9;
+  font-size: 13px;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+main .positionStyle {
+  width: 95%;
+  height: 95%;
+  background-color: #1f3540;
+  border-radius: 10px;
+  box-shadow: 0px 3px 2px 0px black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .positionStyle .x {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 60px;
+  background-color: #31c4be;
+  transform: rotate(45deg);
+}
+main .positionStyle .x::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 60px;
+  background-color: #31c4be;
+  transform: rotate(-90deg);
+}
+main .positionStyle .o {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border: solid 15px #f3b237;
+  border-radius: 50%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99%;
+  margin-top: 10px;
+}
+footer .containerPoints {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  border-radius: 10px;
+}
+footer .containerPointsX {
+  background-color: #31c4be;
+}
+footer .containerPointsTies {
+  background-color: #a8bec9;
+}
+footer .containerPointsO {
+  background-color: #f3b237;
+}/*# sourceMappingURL=style.css.map */
