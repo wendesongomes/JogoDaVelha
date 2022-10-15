@@ -104,6 +104,12 @@ function winAndLoser(win, addPoints){
         clear();
     }
 
+    if(three.id == win && five.id == win && seven.id == win){
+        const number = parseInt(addPoints.innerHTML);
+        addPoints.innerHTML = number + 1;
+        clear();
+    }
+
     if(four.id == win && five.id == win && six.id == win){
         const number = parseInt(addPoints.innerHTML);
         addPoints.innerHTML = number + 1;
